@@ -1,1 +1,3 @@
-Flask
+FFlask
+gunicorn
+yagmail
