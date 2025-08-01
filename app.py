@@ -42,3 +42,12 @@ def send_confirmation_route():
         return jsonify(resultado), 500
     else:
         return jsonify(resultado)
+    
+    
+    
+
+if __name__ == '__main__':
+    # Pega a porta que a Railway oferece ou usa 5000 como padrão
+    port = int(os.environ.get('PORT', 5000))
+    # Inicia o servidor de desenvolvimento do Flask
+    app.run(host='0.0.0.0', port=port)    
